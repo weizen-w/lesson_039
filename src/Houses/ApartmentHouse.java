@@ -6,6 +6,10 @@ public class ApartmentHouse extends House {
 //  целое число - количество подъездов.
 //  В методе toString() выводите в удобном виде всю известную информацию о доме.
 
+//  ***
+//  Для многоквартирного дома выведите на экран: "Вы снесли многоквартирный дом. %d подъездов!"
+//  Вместо %d должно быть число подъездов.
+
   private final int porch;
 
   public ApartmentHouse(String address, int porch) {

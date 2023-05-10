@@ -6,6 +6,9 @@ public class PrivateHouse extends House {
 //  целое число - количество подъездов.
 //  В методе toString() выводите в удобном виде всю известную информацию о доме.
 
+//  ***
+//  для частного дома выводите на экран: "Вы снесли частный дом";
+
   public PrivateHouse(String address) {
     super(address);
   }
