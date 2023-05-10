@@ -17,5 +17,10 @@ public class Main {
     for (House houses : houseList) {
       System.out.println(houses);
     }
+    System.out.println();
+    System.out.println(houseList.get(0).demolish());
+    System.out.println(houseList.get(0));
+    System.out.println(houseList.get(2).demolish());
+    System.out.println(houseList.get(2));
   }
 }
