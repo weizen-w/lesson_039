@@ -25,4 +25,9 @@ public class ApartmentHouse extends House {
   public String toString() {
     return String.format("Многоквартирный дом (%d подъездов) по адресу: %s", porch, getAddress());
   }
+
+  @Override
+  public String demolish() {
+    return String.format("Вы снесли многоквартирный дом. %d подъездов!", porch);
+  }
 }

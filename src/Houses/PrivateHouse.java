@@ -17,4 +17,9 @@ public class PrivateHouse extends House {
   public String toString() {
     return String.format("Частный дом по адресу: %s", getAddress());
   }
+
+  @Override
+  public String demolish() {
+    return "Вы снесли частный дом";
+  }
 }
