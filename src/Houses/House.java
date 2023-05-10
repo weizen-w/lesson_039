@@ -22,4 +22,6 @@ public abstract class House {
   }
 
   public abstract String toString();
+
+  public abstract String demolish();
 }
