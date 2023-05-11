@@ -10,24 +10,25 @@ public class ApartmentHouse extends House {
 //  Для многоквартирного дома выведите на экран: "Вы снесли многоквартирный дом. %d подъездов!"
 //  Вместо %d должно быть число подъездов.
 
-  private final int porch;
+  private final int entrances;
 
   public ApartmentHouse(String address, int porch) {
     super(address);
-    this.porch = porch;
+    this.entrances = porch;
   }
 
-  public int getPorch() {
-    return porch;
+  public int getEntrances() {
+    return entrances;
   }
 
   @Override
   public String toString() {
-    return String.format("Многоквартирный дом (%d подъездов) по адресу: %s", porch, getAddress());
+    return String.format("Многоквартирный дом (%d подъездов) по адресу: %s", entrances,
+        getAddress());
   }
 
   @Override
   public String demolish() {
-    return String.format("Вы снесли многоквартирный дом. %d подъездов!", porch);
+    return String.format("Вы снесли многоквартирный дом. %d подъездов!", entrances);
   }
 }
